@@ -1,5 +1,4 @@
 
-import axios from "axios"
 
 export const getTopHeadline = (data) => {
    return {
@@ -10,7 +9,7 @@ export const getTopHeadline = (data) => {
 
 export const fetchHeadlines = () => {
    return (dispatch) => {
-      fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=3700955710dd4e63b295e48b6237b40a'
+      fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=3700955710dd4e63b295e48b6237b40a')
          // , 
          // {
          //   headers: {
@@ -20,8 +19,8 @@ export const fetchHeadlines = () => {
          //     "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
          //   }
          // }
-      ).then((data) => data.json()).then((data) => {
-         dispatch(getTopHeadline(data.articles))
-      })
+         .then((data) => data.json()).then((data) => {
+            dispatch(getTopHeadline(data.articles))
+         })
    }
 }

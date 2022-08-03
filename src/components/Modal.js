@@ -13,7 +13,7 @@ const Modal = (props) => {
             <p className='title'>{props.title}</p>
             <img src={props.img} alt='NA' className='img2' />
             <p className='content'>{props.content}</p>
-            <p className='author'>By - {props.author}</p>
+            <p className='author'>By - {props.author ? props.author : 'Not Available'}</p>
             <button onClick={closeModal}>Close</button>
          </div>
       </div>

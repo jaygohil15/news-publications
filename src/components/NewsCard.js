@@ -24,6 +24,7 @@ const NewsCard = (props) => {
                         <button onClick={openModal}> Open Article</button>
                      </div>
                   </div>
+                  <hr />
                </>
             )
          }

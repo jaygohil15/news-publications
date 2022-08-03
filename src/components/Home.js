@@ -9,14 +9,15 @@ const Home = (props) => {
    // console.log(props.fetchHeadlines())
 
    useEffect(() => {
-      props.fetchHeadlines()
+      props.fetchHeadlines1()
+      console.log('use effect')
    }, [])
 
    console.log(props.state)
    return (
       <div className="home">
          {
-            props.state ? props.state.data.map((article) => {
+            props.state.data ? props.state.data.map((article) => {
                return <NewsCard author={article.author} desc={article.description} title={article.title} img={article.urlToImage} content={article.content} />
             }) : 'loading...'
          }
@@ -32,7 +33,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
    return {
-      fetchHeadlines: () => dispatch(fetchHeadlines())
+      fetchHeadlines1: () => dispatch(fetchHeadlines())
    }
 }
 
