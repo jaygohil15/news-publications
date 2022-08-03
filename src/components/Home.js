@@ -16,6 +16,7 @@ const Home = (props) => {
    console.log(props.state)
    return (
       <div className="home">
+         <p className="title">News Publication App using React.js</p>
          {
             props.state.data ? props.state.data.map((article) => {
                return <NewsCard author={article.author} desc={article.description} title={article.title} img={article.urlToImage} content={article.content} />
