@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Home from './components/Home'
+import axios from 'axios'
 
 function App() {
+  // fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=3700955710dd4e63b295e48b6237b40a'
+  //   // , 
+  //   // {
+  //   //   headers: {
+  //   //     // 'Content-Type': 'application/json',
+  //   //     'Accept': '*/*',
+  //   //     "Access-Control-Allow-Origin": "*",
+  //   //     "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+  //   //   }
+  //   // }
+  // ).then((data) => data.json()).then((data) => console.log(data))
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home />
     </div>
   );
 }
