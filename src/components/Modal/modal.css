@@ -1,0 +1,27 @@
+
+.img2 {
+   max-width: 500px;
+   max-height: 400px;
+   border-radius: 20px;
+}
+
+.modal, .modal-overlay {
+   width: 100vw;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   position: fixed;
+}
+.modal-overlay {
+    background: rgba(49,49,49,0.8); 
+}
+.modal-content {
+   position: absolute;
+   top: 10%;
+   left: 10%;
+   right: 10%;
+   /* transform: translate(-50%, -50%); */
+   background: #f1f1f1;
+}

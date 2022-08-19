@@ -15,3 +15,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### https://newsapi.org/ api used for fetching articles.
 
+[ ] Add search feature
+[ ] Add modal

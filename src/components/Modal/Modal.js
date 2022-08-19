@@ -9,7 +9,8 @@ const Modal = (props) => {
 
    return (
       <div className="modal">
-         <div className='container-modal' >
+         <div onClick={closeModal} className='modal-overlay'></div>
+         <div className='modal-content' >
             <p className='title'>{props.title}</p>
             <img src={props.img} alt='NA' className='img2' />
             <p className='content'>{props.content}</p>
