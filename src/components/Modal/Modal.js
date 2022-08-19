@@ -2,8 +2,9 @@
 import './modal.css'
 
 const Modal = (props) => {
-
+   document.body.classList.add('active-modal')
    const closeModal = () => {
+      document.body.classList.remove('active-modal')
       props.setModal(false)
    }
 
